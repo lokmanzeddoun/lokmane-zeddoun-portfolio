@@ -4,16 +4,17 @@ import BackgroundPattern from "@/components/BackgroundPattern";
 import Summary from "@/components/Summary";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import Certificate from "@/components/Certificate"
+import Certificate from "@/components/Certificate";
 import Projects from "@/components/Projects";
 
 import { skills } from "@/content/skills";
 import * as enContent from "@/content/en";
+import * as frContent from "@/content/fr";
 
 const Home: FC = () => {
 	const ref = useRef<HTMLDivElement | null>(null);
 	const [selectedLanguage, setSelectedLanguage] = useState("en");
-	const content = enContent
+	const content = selectedLanguage === "en" ? enContent : frContent;
 
 	useEffect(() => {
 		const hash = window.location.hash;
@@ -48,7 +49,7 @@ const Home: FC = () => {
 							? "cursor-default opacity-50"
 							: "cursor-pointer"
 					}`}
-					onClick={() => setSelectedLanguage("pt")}
+					onClick={() => setSelectedLanguage("fr")}
 				>
 					<img src="french.png" className="w-8" />
 				</div>

@@ -4,7 +4,7 @@ import BackgroundPattern from "@/components/BackgroundPattern";
 import Summary from "@/components/Summary";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-// import WorkExperience from "@/components/WorkExperience";
+import Certificate from "@/components/Certificate"
 import Projects from "@/components/Projects";
 
 import { skills } from "@/content/skills";
@@ -31,10 +31,10 @@ const Home: FC = () => {
 				<div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-4xl lg:w-1/2 md:w-1/2 lg:p-6 md:p-6 p-3 overflow-y-scroll">
 					<About title={content.navigation.about} aboutMe={content.aboutMe} />
 					<Skills title={content.navigation.skills} skills={skills} />
-					{/* <WorkExperience
+					<Certificate
 						title={content.navigation.experience}
-						workExperience={content.workExperience}
-					/> */}
+						Certificate={content.Certifications}
+					/>
 					<Projects
 						title={content.navigation.projects}
 						projects={content.projects}

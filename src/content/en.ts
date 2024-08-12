@@ -23,63 +23,64 @@ export const aboutMe = [
 	"As an aspiring Full Stack Developer, I'm equipped to handle both front-end and back-end development. I'm curious, creative, and always eager to take on new challenges in the tech world. Open to work and excited to contribute my comprehensive skills to innovative projects.",
 ];
 
-export const workExperience = [
+export const Certifications = [
 	{
-		company: "BCG X",
-		role: "Software Engineer",
-		period: "Oct 2023 — Present",
-		description: "",
-		technologies: ["React", "FastAPI", "Kubernetes"],
+		period: "Nov 13 , 2022",
+		link: "https://learn.nvidia.com/certificates?id=fb65b41f502546b490baeb5e23d2453e",
+		image: "nvidia.png",
+		description: "Workshop/Fundamentals of Deep Learning",
+		technologies: ["DeepLearning", "TensorFlow", "Pytorch"],
 	},
 	{
-		company: "igc Partners",
-		role: "Software Engineer",
 		period: "Jan 2022 — Jun 2023",
+		link: "https://badgr.com/public/assertions/B03j9Vr2SyGZw0ND1Fd8rA",
+		image: "postman.png",
+
 		description:
-			"Delivered high-quality robust production-ready systems for different areas within the company. Mainly worked with TypeScript, React, NodeJs, NestJs, PostgreSQL, Docker and AWS. I had weekly meetings with the company's stakeholders to gather requirements and discuss the progress of the projects. Created the standards and best practices for the company's frontend and backend projects. Also responsible for the creation of continuous delivery pipelines with GitHub Actions, AWS ElasticBeanstalk, EC2 and Lambda. Trained and led a team of 6 junior developers.",
+			" Postman Student Experts are proficient in the essential skills required for consuming APIs in Postman and applications.",
+		technologies: ["Postman", "Node.js"],
+	},
+	{
+		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/6b7abfb198216118ef0b273c074a2ac0",
+		image: "helsinki.jpg",
+
+		period: "Aug 2024",
+		description: "Full Stack open Web Development",
 		technologies: [
 			"React",
-			"NestJs",
-			"Tailwind",
-			"ElasticBeanstalk",
-			"GitHub Actions",
-			"AWS Lambda",
-			"Docker",
-			"PostgreSQL",
-			"Python",
+			"Express",
 			"NodeJs",
+			"vitest",
+			"playwright",
+			"jest",
+			"Redux",
+			"Mongodb",
+			"ReactRouter",
 		],
 	},
 	{
-		company: "igc Partners",
-		role: "Fullstack Developer",
-		period: "Jan 2021 — Dec 2021",
-		description:
-			"Developed a recruitment system used by the company's HR team to manage a special recruitment process. The system was built using React, Python and Serverless Framework. Deployed the system to AWS using Lambda, DynamoDB and Amplify. Also worked with Python, NodeJs, Serverless and Lambda to build automations, reports and integrations with other systems.",
-		technologies: [
-			"React",
-			"Python",
-			"NodeJs",
-			"Serverless",
-			"AWS Lambda",
-			"DynamoDB",
-			"Amplify",
-		],
+		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/e31c179434ace8b6fb6716375783ea47",
+		image: "helsinki.jpg",
+
+		period: "Aug 2024",
+		description: "GraphQl",
+		technologies: ["graphql", "apollo-server", "apollo-client"],
 	},
 	{
-		company: "theVelops",
-		role: "Fullstack Developer",
-		period: "Jan 2018 — Aug 2018",
-		description:
-			"Worked with the company's development team to build web applications for clients using React, NodeJs, MongoDB and AWS. My main responsibilities were to develop new features and fix bugs in the frontend and backend of the applications. I also led the development of some automations using Serverless Framework, AWS Lambda and Redis.",
-		technologies: [
-			"React",
-			"NodeJs",
-			"MongoDB",
-			"AWS Lambda",
-			"Serverless",
-			"Redis",
-		],
+		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/f9d3b3a2b1d8cdd893d88bef3094e012",
+		image: "helsinki.jpg",
+
+		period: "July 2024",
+		description: "Intro To Container",
+		technologies: ["Docker", "docker-compose"],
+	},
+	{
+		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-psql/en/a61b4db2ac597190d05554dcf4523823",
+		image: "helsinki.jpg",
+
+		period: "Aug 2024",
+		description: "Relational Database With ORM",
+		technologies: ["Sequelize", "Express"],
 	},
 ];
 

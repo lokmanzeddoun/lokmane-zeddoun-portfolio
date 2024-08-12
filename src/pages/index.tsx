@@ -14,7 +14,7 @@ import * as frContent from "@/content/fr";
 const Home: FC = () => {
 	const ref = useRef<HTMLDivElement | null>(null);
 	const [selectedLanguage, setSelectedLanguage] = useState("en");
-	const content = selectedLanguage === "en" ? enContent : frContent;
+	const content = selectedLanguage == "en" ? enContent : frContent;
 
 	useEffect(() => {
 		const hash = window.location.hash;
@@ -45,13 +45,13 @@ const Home: FC = () => {
 			<div className="absolute top-0 right-0 mt-4 mr-4 flex space-x-4">
 				<div
 					className={`text-gray-300 hover:text-gray-400 ${
-						selectedLanguage == "pt"
+						selectedLanguage == "fr"
 							? "cursor-default opacity-50"
 							: "cursor-pointer"
 					}`}
 					onClick={() => setSelectedLanguage("fr")}
 				>
-					<img src="french.png" className="w-8" />
+					<img src="french.png" className="w-8" alt="french flag"  />
 				</div>
 				<div
 					className={`text-gray-300 hover:text-gray-400 ${
@@ -61,7 +61,7 @@ const Home: FC = () => {
 					}`}
 					onClick={() => setSelectedLanguage("en")}
 				>
-					<img src="english.png" className="w-8" />
+					<img src="english.png" className="w-8" alt="english flag" />
 				</div>
 			</div>
 		</div>

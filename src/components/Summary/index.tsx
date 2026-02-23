@@ -22,10 +22,11 @@ interface SummaryProps {
         skills: string;
         experience: string;
         projects: string;
+        certificates: string;
     };
 }
 
-const Summary:FC<SummaryProps> = ({ summary, navigation }) => {
+const Summary: FC<SummaryProps> = ({ summary, navigation }) => {
     const { asPath } = useRouter();
     const [activeTab, setActiveTab] = useState<string | null>(null);
 
@@ -41,7 +42,7 @@ const Summary:FC<SummaryProps> = ({ summary, navigation }) => {
                 {name}
             </h1>
             <h2 className="mt-5 text-2xl font-light tracking-tight text-white">
-                {role} 
+                {role}
                 {!company && <span className="text-slate-500 text-xl ml-4">—</span>}
                 <span className="text-slate-500 font-extralight text-xl ml-4">{company ? `@ ${company}` : "Open to work"}</span>
             </h2>
@@ -49,29 +50,35 @@ const Summary:FC<SummaryProps> = ({ summary, navigation }) => {
                 {bio}
             </p>
             <div className="mt-10 flex flex-col space-y-3">
-                <Link 
+                <Link
                     className={`rounded-lg text-slate-300 flex font-light cursor-pointer w-48 p-2 pl-4 hover:bg-white/10 hover:rounded-lg transition-all hover:font-medium}`}
                     href="#about"
                 >
                     <ChevronDoubleRightIcon className="w-5" /> &ensp; {navigation.about}
                 </Link>
-                <Link 
+                <Link
                     className={`rounded-lg text-slate-300 flex font-light cursor-pointer w-48 p-2 pl-4 hover:bg-white/10 hover:rounded-lg transition-all hover:font-medium}`}
                     href="#skills"
                 >
                     <ChevronDoubleRightIcon className="w-5" /> &ensp; {navigation.skills}
                 </Link>
-                <Link 
+                <Link
                     className={`rounded-lg text-slate-300 flex font-light cursor-pointer w-48 p-2 pl-4 hover:bg-white/10 hover:rounded-lg transition-all hover:font-medium}`}
                     href="#experience"
                 >
                     <ChevronDoubleRightIcon className="w-5" /> &ensp; {navigation.experience}
                 </Link>
-                <Link 
+                <Link
                     className={`rounded-lg text-slate-300 flex font-light cursor-pointer w-48 p-2 pl-4 hover:bg-white/10 hover:rounded-lg transition-all hover:font-medium}`}
                     href="#projects"
                 >
                     <ChevronDoubleRightIcon className="w-5" /> &ensp; {navigation.projects}
+                </Link>
+                <Link
+                    className={`rounded-lg text-slate-300 flex font-light cursor-pointer w-48 p-2 pl-4 hover:bg-white/10 hover:rounded-lg transition-all hover:font-medium}`}
+                    href="#certificates"
+                >
+                    <ChevronDoubleRightIcon className="w-5" /> &ensp; {navigation.certificates}
                 </Link>
             </div>
             <div className="mt-20 flex flex-row space-x-4 ml-3">

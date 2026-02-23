@@ -1,9 +1,9 @@
 export const summary = {
 	name: "Zeddoun Lokmane",
-	role: "Full Stack Developer",
-	bio: "Hi I’m Zeddoun Lokmane and I'm a passionate full-stack developer. I'm proficient in both front-end technologies like HTML, CSS, and JavaScript frameworks like React and next. I also have a strong understanding of back-end development using node.js  and frameworks like nest.js,express. I enjoy tackling complex challenges and delivering user-centric solutions throughout the development cycle.",
+	role: "AI Engineer & Full Stack Developer",
+	bio: "Currently in fifth year at the Higher School of Computer Science in Sidi Bel Abbès, specializing in Artificial Intelligence and Data Science. Passionate about computer vision and AI engineering, with hands-on experience in PyTorch, TensorFlow, Keras, scikit-learn and OpenCV. Proficient in building training pipelines, experiment tracking with Weights & Biases and cloud training (GCP). Significant experience in web development and backend engineering with Node.js, GraphQL (Apollo Federation), RabbitMQ, Redis and containerized deployments (Docker, Kubernetes, CI/CD).",
 	githubLink: "https://github.com/lokmanzeddoun",
-	linkedinLink: "https://www.linkedin.com/in/lokmane-zeddoun-22609125b/",
+	linkedinLink: "https://www.linkedin.com/in/lokmanezeddoun",
 	email: "lokmanezeddoun@gmail.com",
 	mediumLink: "https://medium.com/@lokmanezeddoun",
 	twitterLink: "https://twitter.com/ZeddounLokmane",
@@ -13,108 +13,186 @@ export const summary = {
 export const navigation = {
 	about: "About me",
 	skills: "Skills",
+	experience: "Experience",
 	projects: "Projects",
-	experience: "Certificates",
+	certificates: "Certificates",
 };
 
 export const aboutMe = [
-	"4th Year Computer Science student aspiring to be a Full Stack Developer. Passionate about technology and software development, currently seeking opportunities to apply and expand my skills across the entire web development stack.",
-	"My background includes a strong foundation in computer science principles, proficiency in full stack technologies such as NodeJS, React, TypeScript, Docker, and AWS, as well as experience with SQL and NoSQL databases. I'm well-versed in Clean Code principles and have a track record of building scalable and efficient systems.",
-	"As an aspiring Full Stack Developer, I'm equipped to handle both front-end and back-end development. I'm curious, creative, and always eager to take on new challenges in the tech world. Open to work and excited to contribute my comprehensive skills to innovative projects.",
+	"Fifth-year student at the Higher School of Computer Science (ESI SBA), pursuing a Master's in Artificial Intelligence and Data Science. Passionate about computer vision, AI engineering, and building intelligent systems that solve real-world problems.",
+	"My technical toolkit spans the full AI/ML pipeline — from data labeling and augmentation, through model training with PyTorch and TensorFlow, to experiment tracking with Weights & Biases and cloud-based training on GCP. I'm experienced with object detection (YOLOv11), image/video processing with OpenCV, and deploying models in production environments.",
+	"Beyond AI, I bring significant experience in full-stack and backend engineering: building microservices with Node.js, NestJS, and GraphQL (Apollo Federation), designing real-time systems with Socket.IO and RabbitMQ, and managing containerized deployments with Docker, Kubernetes, and CI/CD pipelines.",
+];
+
+export const experiences = [
+	{
+		period: "Dec 2024 — Oct 2025",
+		company: "Eagle Orbit",
+		location: "Remote",
+		role: "Backend Engineer",
+		bullets: [
+			"Collaborated with specialized teams to develop scalable software solutions for enterprise clients using Bun.js runtime and Apollo GraphQL federation.",
+			"Architected and implemented microservices with Apollo Federation for efficient service communication and data management.",
+			"Built high-performance messaging systems using RabbitMQ and Redis for pub/sub, search, and scripting modules.",
+			"Managed containerized deployments using Docker, Kubernetes and Jenkins CI/CD for automated testing and deployments.",
+		],
+		technologies: [
+			"Bun.js",
+			"Apollo GraphQL",
+			"RabbitMQ",
+			"Redis",
+			"Docker",
+			"Kubernetes",
+			"Jenkins",
+		],
+		link: null,
+	},
+	{
+		period: "Sep 2024 — Jan 2025",
+		company: "Load-Blink App",
+		location: "Freelance",
+		role: "Full Stack Developer — TSM System & IoT",
+		bullets: [
+			"Designed and developed a Transport and Shipping Management (TSM) system using Node.js and React.",
+			"Implemented a TCP server acting as packet decoder for GPS trackers, enabling real-time IoT data reception and interpretation.",
+			"Developed real-time features with Socket.IO for live vehicle tracking and notifications.",
+			"Integrated AWS S3 for object storage and set up CI/CD pipelines with GitHub Actions.",
+		],
+		technologies: [
+			"Node.js",
+			"React",
+			"Socket.IO",
+			"AWS S3",
+			"GitHub Actions",
+			"TCP/IoT",
+		],
+		link: "https://tsm-frontend-kappa.vercel.app/log-in",
+		deployUrl: "https://tsm-frontend-kappa.vercel.app/log-in",
+		testCredentials: { username: "admin1", password: "Admin123" },
+		screenshots: [
+			"screenshots/load-blink/lb-01.png",
+			"screenshots/load-blink/lb-02.png",
+			"screenshots/load-blink/lb-03.png",
+			"screenshots/load-blink/lb-04.png",
+			"screenshots/load-blink/lb-05.png",
+			"screenshots/load-blink/lb-06.png",
+			"screenshots/load-blink/lb-07.png",
+			"screenshots/load-blink/lb-08.png",
+			"screenshots/load-blink/lb-09.png",
+		],
+	},
+	{
+		period: "Sep 2024 — Oct 2024",
+		company: "Algérie Télécom",
+		location: "On-site",
+		role: "Full Stack Developer — Nest.js, React, TypeScript",
+		bullets: [
+			"Developed a web application for order and service management using Nest.js, React, and TypeScript.",
+			"Implemented user management, automated order printing, service and financial modules.",
+			"Integrated authentication and role-based authorization across organizational levels.",
+			"Streamlined workflows and improved administrator interfaces.",
+		],
+		technologies: [
+			"Nest.js",
+			"React",
+			"TypeScript",
+			"PostgreSQL",
+		],
+		link: "https://github.com/lokmanzeddoun/omat-order-mission-algerie-telecom-",
+		screenshots: [
+			"screenshots/omat/omat-01.png",
+			"screenshots/omat/omat-02.png",
+			"screenshots/omat/omat-03.png",
+			"screenshots/omat/omat-04.png",
+			"screenshots/omat/omat-05.png",
+			"screenshots/omat/omat-06.png",
+			"screenshots/omat/omat-07.png",
+			"screenshots/omat/omat-08.png",
+			"screenshots/omat/omat-09.png",
+		],
+	},
 ];
 
 export const Certifications = [
 	{
-		period: "Nov 13 , 2022",
-		link: "https://learn.nvidia.com/certificates?id=fb65b41f502546b490baeb5e23d2453e",
-		image: "nvidia.png",
-		description: "Workshop/Fundamentals of Deep Learning",
-		technologies: ["DeepLearning", "TensorFlow", "Pytorch"],
+		period: "2025",
+		link: "https://cert.efset.org/nKV15L",
+		image: "efset.png",
+		description: "EF SET English Certificate C1 — Score 62/100, advanced level",
+		technologies: ["English", "C1"],
 	},
 	{
-		period: "Jan 2022 — Jun 2023",
-		link: "https://badgr.com/public/assertions/B03j9Vr2SyGZw0ND1Fd8rA",
-		image: "postman.png",
-
+		period: "2025",
+		link: "#",
+		image: "helsinki.jpg",
 		description:
-			" Postman Student Experts are proficient in the essential skills required for consuming APIs in Postman and applications.",
-		technologies: ["Postman", "Node.js"],
+			"EDUCOSYS Hands-on Generative AI — Practical training on generative AI and language models",
+		technologies: ["Generative AI", "LLMs"],
 	},
 	{
 		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/6b7abfb198216118ef0b273c074a2ac0",
 		image: "helsinki.jpg",
-
-		period: "Aug 2024",
-		description: "Full Stack open Web Development",
+		period: "2024",
+		description:
+			"Full Stack Open (University of Helsinki) — MERN stack, testing, CI/CD and containerization",
 		technologies: [
 			"React",
 			"Express",
-			"NodeJs",
-			"vitest",
-			"playwright",
-			"jest",
-			"Redux",
-			"Mongodb",
-			"ReactRouter",
+			"Node.js",
+			"Docker",
+			"CI/CD",
+			"Testing",
 		],
 	},
 	{
-		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/e31c179434ace8b6fb6716375783ea47",
+		link: "#",
 		image: "helsinki.jpg",
-
-		period: "Aug 2024",
-		description: "GraphQl",
-		technologies: ["graphql", "apollo-server", "apollo-client"],
-	},
-	{
-		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/f9d3b3a2b1d8cdd893d88bef3094e012",
-		image: "helsinki.jpg",
-
-		period: "July 2024",
-		description: "Intro To Container",
-		technologies: ["Docker", "docker-compose"],
-	},
-	{
-		link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-psql/en/a61b4db2ac597190d05554dcf4523823",
-		image: "helsinki.jpg",
-
-		period: "Aug 2024",
-		description: "Relational Database With ORM",
-		technologies: ["Sequelize", "Express"],
+		period: "2024",
+		description:
+			"Graph Developer Professional — Apollo Federation for building federated supergraphs",
+		technologies: ["GraphQL", "Apollo Federation"],
 	},
 ];
 
 export const projects = [
 	{
-		title: "E-Learn",
+		title: "ALPR — License Plate Recognition",
 		description:
-			"Developed a comprehensive educational platform using Express.js and MySQL, facilitating seamless interaction between students, teachers, and administrators. Implemented user authentication, role-based access control, and API endpoints for course material management. The system includes features for discussion forums, MOOC access, quiz submissions, automated student progression, and administrative tasks. Designed a robust database schema to support complex educational workflows and maintain data integrity. This project streamlined administrative processes and provided a centralized platform for learning and collaboration, significantly enhancing the overall educational experience.",
+			"Real-time detection, recognition, and extraction of license plates for security use-cases. Video ingest from IP/USB cameras (RTSP); alerting with plate metadata persisted in database. Backend APIs with Flask; monitoring dashboard built with Next.js. Models in PyTorch using YOLOv11 for detection and a trained color-recognition classifier. Training and experiment tracking via Weights & Biases; jobs executed on GCP.",
+		url: "https://github.com/lokmanzeddoun",
+		technologies: [
+			"PyTorch",
+			"YOLOv11",
+			"Flask",
+			"Next.js",
+			"OpenCV",
+			"W&B",
+			"GCP",
+		],
+		image: "default-project.png",
+	},
+	{
+		title: "YOLO Image Search",
+		description:
+			"Content-based image search engine using YOLOv11-m for indexing and semantic search. Extracts object embeddings from images and enables similarity-based retrieval across datasets.",
+		url: "https://github.com/lokmanzeddoun",
+		technologies: ["Python", "YOLOv11", "Computer Vision"],
+		image: "default-project.png",
+	},
+	{
+		title: "Mental Well-Being Agent",
+		description:
+			"Mental well-being conversational agent based on AutoGen framework and LLMs. Provides empathetic, context-aware conversations to support mental well-being through AI-powered dialogue.",
+		url: "https://github.com/lokmanzeddoun",
+		technologies: ["Python", "AutoGen", "LLMs", "AI Agents"],
+		image: "default-project.png",
+	},
+	{
+		title: "E-Learn Platform",
+		description:
+			"Comprehensive educational platform using Express.js and MySQL, facilitating interaction between students, teachers, and administrators. Features include user authentication, role-based access control, discussion forums, MOOC access, quiz submissions, and automated student progression.",
 		url: "https://github.com/ibrahimn9/E-Learn-Platform",
-		technologies: ["Node.js", "Express.js", "MySql", "ffempeg", "Google Drive"],
+		technologies: ["Node.js", "Express.js", "MySQL", "ffmpeg", "Google Drive"],
 		image: "e-learn.jpg",
-	},
-	{
-		title: "Weather",
-		description:
-			"Developed a responsive weather application using React and React Query. Integrated the OpenWeather API to fetch real-time weather data for user-specified locations. Implemented features including current weather conditions, temperature, humidity, wind speed, and a 5-day forecast. Utilized React Query for efficient data fetching and caching, improving app performance and user experience. The app showcases clean UI design and intuitive user interactions, demonstrating proficiency in frontend development and third-party API integration.",
-		url: "https://github.com/lokmanzeddoun/weather-app",
-		technologies: ["React.js", "react-query", "openWeather api", "redux"],
-		image: "weather.jpg",
-	},
-	{
-		title: "Crypto Cli",
-		description:
-			"Developed a command-line interface application using Node.js and Yargs for cryptocurrency enthusiasts. The app allows users to fetch real-time cryptocurrency data, including prices, market caps, and trading volumes. Implemented commands for price tracking, portfolio management, and basic market analysis. Utilized Yargs for parsing command-line arguments, providing a user-friendly interface with customizable options. Integrated with a cryptocurrency API to ensure up-to-date and accurate information. This project demonstrates proficiency in building efficient CLI tools and working with financial data in a Node.js environment.",
-		url: "https://github.com/lokmanzeddoun/node-projects/tree/main/crypto-cli",
-		technologies: ["typescript", "node.js", "yargs", "chalk"],
-		image: "cli.png",
-	},
-	{
-		title: "Telegram Bot",
-		description:
-			"Developed a Telegram bot using Node.js and the Telegraf framework to help users find and fetch information about desired courses. The bot allows users to search for courses by keywords, subjects, or instructors. Implemented natural language processing to interpret user queries and provide relevant course suggestions. Integrated with an educational database or API to fetch course details, including descriptions, schedules, and prerequisites. Features include course recommendations, syllabus previews, and notification alerts for course availability. This project showcases skills in bot development, API integration, and creating user-friendly interfaces for educational technology applications.",
-		url: "https://github.com/lokmanzeddoun/fetch-course",
-		technologies: ["typescript", "node.js", "telegraf", "puppeteer"],
-		image: "tele.png",
 	},
 ];

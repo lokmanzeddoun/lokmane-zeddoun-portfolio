@@ -4,6 +4,7 @@ import BackgroundPattern from "@/components/BackgroundPattern";
 import Summary from "@/components/Summary";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 import Certificate from "@/components/Certificate";
 import Projects from "@/components/Projects";
 
@@ -25,40 +26,42 @@ const Home: FC = () => {
 
 	return (
 		<div className="relative isolate overflow-hidden bg-gray-900">
-			<title>Zeddoun Lokmane | Full Stack Developer</title>
+			<title>Zeddoun Lokmane | AI Engineer & Full Stack Developer</title>
 			<BackgroundPattern />
 			<div className="mx-auto overflow-auto sm:overflow-auto max-w-10xl h-screen px-6 pb-24 pt-10 sm:pb-32 lg:flex md:flex lg:justify-evenly md:justify-evenly lg:px-8 lg:py-15">
 				<Summary navigation={content.navigation} summary={content.summary} />
 				<div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-4xl lg:w-1/2 md:w-1/2 lg:p-6 md:p-6 p-3 overflow-y-scroll">
 					<About title={content.navigation.about} aboutMe={content.aboutMe} />
 					<Skills title={content.navigation.skills} skills={skills} />
-					<Certificate
+					<Experience
 						title={content.navigation.experience}
-						Certificate={content.Certifications}
+						experiences={content.experiences}
 					/>
 					<Projects
 						title={content.navigation.projects}
 						projects={content.projects}
 					/>
+					<Certificate
+						title={content.navigation.certificates}
+						Certificate={content.Certifications}
+					/>
 				</div>
 			</div>
 			<div className="absolute top-0 right-0 mt-4 mr-4 flex space-x-4">
 				<div
-					className={`text-gray-300 hover:text-gray-400 ${
-						selectedLanguage == "fr"
+					className={`text-gray-300 hover:text-gray-400 ${selectedLanguage == "fr"
 							? "cursor-default opacity-50"
 							: "cursor-pointer"
-					}`}
+						}`}
 					onClick={() => setSelectedLanguage("fr")}
 				>
-					<img src="french.png" className="w-8" alt="french flag"  />
+					<img src="french.png" className="w-8" alt="french flag" />
 				</div>
 				<div
-					className={`text-gray-300 hover:text-gray-400 ${
-						selectedLanguage == "en"
+					className={`text-gray-300 hover:text-gray-400 ${selectedLanguage == "en"
 							? "cursor-default opacity-50"
 							: "cursor-pointer"
-					}`}
+						}`}
 					onClick={() => setSelectedLanguage("en")}
 				>
 					<img src="english.png" className="w-8" alt="english flag" />

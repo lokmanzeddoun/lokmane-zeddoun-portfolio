@@ -16,7 +16,7 @@ interface CertificateProps {
 
 const Certificate: FC<CertificateProps> = ({ Certificate, title }) => {
 	return (
-		<div id="experience">
+		<div id="certificates">
 			<h1 className="pt-20 text-2xl font-base tracking-tight text-cyan-200">
 				{title}
 			</h1>

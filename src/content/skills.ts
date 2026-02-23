@@ -5,16 +5,34 @@ import {
 	SiNestjs,
 	SiReact,
 	SiDocker,
-	SiAmazonaws,
-	SiAwsamplify,
-	SiAwslambda,
-	SiServerless,
 	SiPython,
 	SiPostgresql,
 	SiMongodb,
+	SiPytorch,
+	SiTensorflow,
+	SiOpencv,
+	SiKubernetes,
+	SiRedis,
+	SiGraphql,
 } from "react-icons/si";
 
 export const skills = [
+	{
+		name: "Python",
+		Icon: SiPython,
+	},
+	{
+		name: "PyTorch",
+		Icon: SiPytorch,
+	},
+	{
+		name: "TensorFlow",
+		Icon: SiTensorflow,
+	},
+	{
+		name: "OpenCV",
+		Icon: SiOpencv,
+	},
 	{
 		name: "Javascript",
 		Icon: SiJavascript,
@@ -22,10 +40,6 @@ export const skills = [
 	{
 		name: "Typescript",
 		Icon: SiTypescript,
-	},
-	{
-		name: "Python",
-		Icon: SiPython,
 	},
 	{
 		name: "Node.js",
@@ -40,25 +54,20 @@ export const skills = [
 		Icon: SiReact,
 	},
 	{
-		name: "Serverless",
-		Icon: SiServerless,
+		name: "GraphQL",
+		Icon: SiGraphql,
 	},
 	{
 		name: "Docker",
 		Icon: SiDocker,
 	},
-
 	{
-		name: "AWS",
-		Icon: SiAmazonaws,
+		name: "Kubernetes",
+		Icon: SiKubernetes,
 	},
 	{
-		name: "Amplify",
-		Icon: SiAwsamplify,
-	},
-	{
-		name: "Lambda",
-		Icon: SiAwslambda,
+		name: "Redis",
+		Icon: SiRedis,
 	},
 	{
 		name: "PostgreSQL",
